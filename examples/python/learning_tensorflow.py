@@ -16,7 +16,7 @@ from argparse import ArgumentParser
 learning_rate = 0.00025
 # learning_rate = 0.0001
 discount_factor = 0.99
-epochs = 20
+epochs = 2
 learning_steps_per_epoch = 2000
 replay_memory_size = 10000
 
@@ -33,13 +33,13 @@ episodes_to_watch = 10
 
 
 # TODO move to argparser
-save_model = True
-load_model = False
-skip_learning = False
+save_model = False
+load_model = True
+skip_learning = True
 
 # Configuration file path
 DEFAULT_MODEL_SAVEFILE = "/tmp/model"
-DEFAULT_CONFIG = "../../scenarios/simpler_basic.cfg"
+DEFAULT_CONFIG = "../../scenarios/deathmatch.cfg"
 
 
 # config_file_path = "../../scenarios/rocket_basic.cfg"

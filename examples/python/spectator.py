@@ -14,7 +14,7 @@ from time import sleep
 import vizdoom as vzd
 from argparse import ArgumentParser
 
-DEFAULT_CONFIG = "../../scenarios/deathmatch.cfg"
+DEFAULT_CONFIG = "../../scenarios/my_way_home.cfg"
 
 if __name__ == "__main__":
     parser = ArgumentParser("ViZDoom example showing how to use SPECTATOR mode.")
@@ -32,6 +32,7 @@ if __name__ == "__main__":
     # Multiple config files are ok but combining these ones doesn't make much sense.
 
     game.load_config(args.config)
+    game.set_doom_map("map01")
 
     # Enables freelook in engine
     game.add_game_args("+freelook 1")

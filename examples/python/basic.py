@@ -66,7 +66,7 @@ if __name__ == "__main__":
     game.add_available_button(vzd.Button.ATTACK)
 
     # Adds game variables that will be included in state.
-    game.add_available_game_variable(vzd.GameVariable.AMMO2)
+    game.add_available_game_variable(vzd.GameVariable.WEAPON9)
 
     # Causes episodes to finish after 200 tics (actions)
     game.set_episode_timeout(200)
